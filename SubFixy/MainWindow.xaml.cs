@@ -181,7 +181,7 @@ namespace SubFixy
 
         private void Info_Btn_Click(object sender, RoutedEventArgs e)
         {
-            string s= " Dev : Nima Abdoli \n\n Telegram : @Abdoli_Nima \n\n Code With ❤\n\n version : 0.5.45";
+            string s= " Dev : Nima Abdoli \n\n Telegram : @Abdoli_nima \n\n Code With ❤\n\n version : 0.5.45";
             MessageBox.Show(s);
         }
     }// End of MainWindow Class
