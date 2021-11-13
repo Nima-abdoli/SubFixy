@@ -1,0 +1,90 @@
+﻿<Window x:Class="SubFixy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SubFixy"
+        mc:Ignorable="d"
+        Title="SubFixy v0.5.45" 
+        Height="165" Width="350"
+        ResizeMode="NoResize"
+        AllowDrop="True"
+        Drop="Window_Drop" 
+        WindowStartupLocation="CenterScreen"
+        Icon="Resource/SubFixy.png">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Drag Your Arabic/Persian subtitle File here " VerticalAlignment="Center"
+                   HorizontalAlignment="Center" Margin="0 5 0 0" FontSize="16"
+                   FontWeight="Bold"/>
+
+
+        <Grid Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Subtitle Path :" Margin="10 10 0 5" Grid.Column="0"
+                       VerticalAlignment="Center" TextAlignment="Center"/>
+
+            <TextBox x:Name="SubFile_TxtBx" Margin="10 12 10 5" Grid.Column="1"
+                     VerticalAlignment="Center" VerticalContentAlignment="Center"
+                     IsReadOnly="True"/>
+
+        </Grid>
+
+        <Grid Grid.Row="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Fixed Subtitle Path :" Margin="10,12,0,6" Grid.Column="0"
+                       VerticalAlignment="Center" />
+
+            <TextBox x:Name="SubFixed_TxtBx" Margin="10 10 10 2" Grid.Column="1"
+                     VerticalAlignment="Center" VerticalContentAlignment="Center"
+                     IsReadOnly="True" d:LayoutOverrides="TopMargin, BottomMargin"/>
+
+        </Grid>
+
+
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="MessageShow_TxtBl" Grid.Column="0"
+                       VerticalAlignment="Center" Margin="2 2 10 0"
+                       TextAlignment="Center"/>
+
+            <Button x:Name="OpenFile_Btn" Content="&#xE8E5;" Width="25" Padding="3"
+                    FontFamily="Segoe MDL2 Assets" Margin="0 2 2 0" HorizontalAlignment="Right"
+                    Grid.Column="1" Background="{x:Null}" FontSize="15"
+                    Click="OpenFile_Btn_Click" ToolTip="Open Fixed Subtitle"/>
+
+            <Button Name="Info_Btn" Grid.Column="2" Margin="0 2 10 0"
+                    Width="25" Padding="2" Background="{x:Null}"
+                    Content="&#xE946;" FontFamily="Segoe MDL2 Assets" FontSize="16"
+                    ToolTip="Developer Info"
+                    Click="Info_Btn_Click"/>
+        </Grid>
+
+       
+
+
+
+    </Grid>
+</Window>
