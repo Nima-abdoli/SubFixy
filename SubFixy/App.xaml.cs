@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
@@ -22,8 +16,8 @@ namespace SubFixy
         {
             base.OnStartup(e);
 
+            // appcenter app analytics connection.
             AppCenter.Start("dd6bfde3-a13b-4c47-a73c-7c315b949b6b", typeof(Analytics), typeof(Crashes));
-
 
         }
     }

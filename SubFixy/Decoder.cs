@@ -5,18 +5,22 @@ namespace SubFixy
 {
     class Decoder
     {
-
+        // Content(Text) of fixed subtitle file
         public string Result { get; set; }
-
+        
+        // path of file
         private string mPath { get; set; }
 
+        // all bytes first save as array in here
         private byte[] FileBytes { get; set; }
+
 
         public Decoder(string Path)
         {
             // Set mPath to entry path that caller give.
             mPath = Path;
         }
+
 
         public string Start()
         {
