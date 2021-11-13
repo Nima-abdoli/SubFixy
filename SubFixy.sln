@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubFixer", "SubFixer\SubFix
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubFixy", "SubFixy\SubFixy.csproj", "{C0C05150-21D1-4295-AA13-59EF86CE1D8D}"
 EndProject
-Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "SubSetup", "SubSetup\SubSetup.aiproj", "{2EF01904-DACA-403C-880B-0A08E33DE94C}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SubFixy_Setup", "SubFixy_Setup\SubFixy_Setup.vdproj", "{58DE4949-E7DE-46FD-BA29-000F23070A58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,12 +27,9 @@ Global
 		{C0C05150-21D1-4295-AA13-59EF86CE1D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0C05150-21D1-4295-AA13-59EF86CE1D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0C05150-21D1-4295-AA13-59EF86CE1D8D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2EF01904-DACA-403C-880B-0A08E33DE94C}.All|Any CPU.ActiveCfg = All
-		{2EF01904-DACA-403C-880B-0A08E33DE94C}.All|Any CPU.Build.0 = All
-		{2EF01904-DACA-403C-880B-0A08E33DE94C}.Debug|Any CPU.ActiveCfg = All
-		{2EF01904-DACA-403C-880B-0A08E33DE94C}.Debug|Any CPU.Build.0 = All
-		{2EF01904-DACA-403C-880B-0A08E33DE94C}.Release|Any CPU.ActiveCfg = All
-		{2EF01904-DACA-403C-880B-0A08E33DE94C}.Release|Any CPU.Build.0 = All
+		{58DE4949-E7DE-46FD-BA29-000F23070A58}.All|Any CPU.ActiveCfg = Debug
+		{58DE4949-E7DE-46FD-BA29-000F23070A58}.Debug|Any CPU.ActiveCfg = Debug
+		{58DE4949-E7DE-46FD-BA29-000F23070A58}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
