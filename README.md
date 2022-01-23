@@ -1,5 +1,7 @@
-<img src="Logo.png" alt="drawing" width="200" />
+<img src="Logo.png" alt="drawing" width="400" />
 
 
+---
 
 Fix Persian/Arabic Subtitle Character
+
